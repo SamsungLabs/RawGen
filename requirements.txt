@@ -1,0 +1,34 @@
+# Pinned to the versions this release was validated against (single GPU,
+# ~37 GB VRAM peak; see README Requirements. FLUX.1-Kontext-dev + FLUX.1-dev).
+#
+# torch: install the matching CUDA build separately if the default wheel does not
+# match your driver, e.g.
+#   pip install torch==2.6.0 torchvision==0.21.0 --index-url https://download.pytorch.org/whl/cu124
+torch==2.6.0
+torchvision==0.21.0
+diffusers==0.38.0
+peft==0.19.1
+transformers==5.12.1
+accelerate==1.14.0
+safetensors==0.8.0
+colour-science==0.4.6
+colour-demosaicing==0.2.6
+opencv-python==4.11.0.86
+rawpy==0.27.0
+PyExifTool==0.5.6
+imagecodecs==2026.1.14
+Pillow==12.2.0
+tifffile==2026.3.3
+scipy==1.17.1
+scikit-image==0.26.0
+numpy==1.26.4
+exifread==3.5.1
+tqdm==4.68.3
+
+# --- Training / data preparation only -------------------------------------
+# Not needed to run image_to_raw.py or text_to_raw.py. Install these as well
+# if you intend to reproduce the checkpoints (see README "Training").
+wandb==0.28.0
+tensorboard==2.21.0
+matplotlib==3.11.0
+torchmetrics==1.9.0

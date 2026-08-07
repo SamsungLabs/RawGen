@@ -1,0 +1,17 @@
+out/
+*.pyc
+__pycache__/
+
+# virtualenvs
+.venv/
+venv/
+
+# Model weights. checkpoints/ is where the CLIs load the two checkpoints from by
+# default; they are hundreds of MB and stay out of git however you obtained them
+# — trained yourself via training/, or distributed separately. See the README.
+*.pt
+*.pth
+*.safetensors
+checkpoints/
+results/
+tensorboard/

@@ -1,0 +1,32 @@
+RawGen — attribution and modification notices for the model weights
+==================================================================
+
+The RawGen checkpoints (`kontext_lora.pt`, `vae_decoder_xyz.pt`) are
+Derivatives of Black Forest Labs' FLUX.1 models and are covered by the
+FLUX.1 [dev] Non-Commercial License. A copy of that license is included
+at `licenses/FLUX.1-dev-Non-Commercial-License.md`.
+
+This applies both to checkpoints obtained with this source tree and to
+checkpoints you train yourself by running `training/`. The notices below
+are the ones that license requires to be displayed with a Derivative —
+carry them with any copy you redistribute.
+
+Attribution Notice, displayed as required by section 3(b) of that license:
+
+    "The FLUX.1 [dev] Model is licensed by Black Forest Labs Inc. under the
+    FLUX.1 [dev] Non-Commercial License. Copyright Black Forest Labs Inc.
+    IN NO EVENT SHALL BLACK FOREST LABS INC. BE LIABLE FOR ANY CLAIM, DAMAGES
+    OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+    ARISING FROM, OUT OF OR IN CONNECTION WITH USE OF THIS MODEL."
+
+Statement of modification, as required by section 3(c)(i):
+
+    RawGen has modified the FLUX.1 [dev] Model. `kontext_lora.pt` is a LoRA
+    adapter trained on the FLUX.1-Kontext-dev transformer; it contains only
+    adapter tensors and no base weights. `vae_decoder_xyz.pt` is a full
+    fine-tune of the FLUX.1-dev VAE decoder, retrained to decode latents to
+    CIE XYZ instead of sRGB.
+
+RawGen is an independent research project. It is not an official product of
+Black Forest Labs Inc., and has not been endorsed, approved or validated by
+Black Forest Labs Inc.
